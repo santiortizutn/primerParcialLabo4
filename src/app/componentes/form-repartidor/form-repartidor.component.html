@@ -1,0 +1,52 @@
+<form class="needs-validation" [formGroup]="formGroup" (ngSubmit)="aceptar()">
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" id="nombre" placeholder="" value="" formControlName="nombre">
+      <small class="invalid" *ngIf="formGroup.get('nombre')?.errors?.required && formGroup.get('nombre')?.touched">El nombre es requerido</small>
+      <small class="invalid" *ngIf="formGroup.get('nombre')?.errors?.contieneEspacios && formGroup.get('nombre')?.touched">El nombre no puede tener espacios</small>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="dni">Dni</label>
+      <input type="text" class="form-control" id="dni" placeholder="" value="" formControlName="dni">
+      <small class="invalid" *ngIf="!formGroup.get('dni')?.errors?.contieneLetras && formGroup.get('dni')?.errors?.mayorADiez">El dni no puede tener mas de 10 numeros</small>
+            <small class="invalid" *ngIf="!formGroup.get('dni')?.errors?.required && formGroup.get('dni')?.errors?.contieneLetras && formGroup.get('dni')?.touched">El dni solo puede tener numeros</small>
+            <small class="invalid" *ngIf="formGroup.get('dni')?.errors?.required && formGroup.get('dni')?.touched">El dni es requerido</small>
+    </div>
+  </div>
+<div class="row">
+  <div class="col-md-6 mb-3">
+    <label for="capacidad">Capacidad de transporte</label>
+    <input type="number" class="form-control" id="capacidad" placeholder="" formControlName="capacidad">
+    <small class="invalid" *ngIf="formGroup.get('capacidad')?.errors?.min || formGroup.get('capacidad')?.errors?.max && formGroup.get('capacidad')?.touched">La capacidad debe ser entre 1 y 99 años</small>
+    <small class="invalid" *ngIf="formGroup.get('capacidad')?.errors?.required && formGroup.get('capacidad')?.touched">El campo es requerido</small>
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <label for="edad">Edad</label>
+    <input type="number" class="form-control" id="edad" placeholder="" formControlName="edad">
+    <small class="invalid" *ngIf="formGroup.get('edad')?.errors?.min || formGroup.get('edad')?.errors?.max && formGroup.get('edad')?.touched">La edad debe ser entre 18 y 99 años</small>
+    <small class="invalid" *ngIf="formGroup.get('edad')?.errors?.required && formGroup.get('edad')?.touched">La edad es requerida</small>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <label for="unidadPropia">Unidad propia</label>
+      <select class="form-control" id="unidadPropia" formControlName="unidadPropia">
+        <option value="">Elige...</option>
+        <option>Si</option>
+        <option>No</option>
+      </select>
+      <small class="invalid" *ngIf="formGroup.get('unidadPropia')?.errors?.required && formGroup.get('unidadPropia')?.touched">El campo es requerido</small>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="pais">Pais de origen</label>
+      <input type="text" class="form-control" id="pais" placeholder="" formControlName="pais" [(ngModel)]="this.paisSeleccionado.name">
+    </div>
+
+  </div>
+  <hr class="mb-4">
+  <button class="w-100 btn btn-primary btn-lg btn-block" type="submit" [disabled] ="formGroup.invalid">Aceptar</button>
+</form>

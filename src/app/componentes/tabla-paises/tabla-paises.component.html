@@ -1,0 +1,16 @@
+
+  <h4 class="d-flex justify-content-between align-items-center mb-3">
+    <span class="text-muted">Paises</span>
+  </h4>
+  <div style="overflow-y: scroll; height: 200px;">
+    <ul class="list-group mb-3" *ngFor="let pais of listadoPaises">
+      <li class="list-group-item d-flex justify-content-between lh-condensed" >
+        <div style="display: flex;" (click)="seleccionarPais(pais)">
+          <h6 class="my-0">{{pais.name}}</h6>
+          <img src="{{pais.flag}}" style="width: 35px; height: 25px; padding: 5px;">
+        </div>
+      </li>
+    </ul>
+  </div>
+
+

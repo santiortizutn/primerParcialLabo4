@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="formulario">
+    <h2>FORMULARIO DE INGRESO</h2>
+    <br>
+    <div class="group">
+      <label for="correo" > Correo electronico</label>
+      <input type="email" name="correo" class="form-control" [(ngModel)]="this.usuario.correo">
+    </div>
+    <div class="group">
+      <label for="correo"> Contraseña</label>
+       <input type="password" class="form-control" [(ngModel)]="this.usuario.clave">
+    </div>
+    <br>
+    <button class="btn" (click)="login()">INGRESAR</button>
+  </div>
+
+</div>
