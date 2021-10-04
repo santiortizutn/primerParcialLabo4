@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/servicios/auth.service';
 
 @Component({
   selector: 'app-cabecera',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabeceraComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public authService : AuthService, private router : Router) {
+
+  }
 
   ngOnInit(): void {
+  }
+
+  logOut(){
+    this.authService.logout().then(resp => {
+      this.authService.signOut();
+      console.log(this.authService.logueado);
+    }, error =>{
+      console.log("ERROR: ", error);
+    });
   }
 
 }

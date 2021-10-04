@@ -19,7 +19,7 @@ export class FormRepartidorComponent implements OnInit {
       "edad": ['', [Validators.required, Validators.min(18), Validators.max(99)]],
       "capacidad": ['', [Validators.required, Validators.min(1), Validators.max(99)]],
       "unidadPropia": ['', Validators.required],
-      "pais": [this.paisSeleccionado]
+      "pais": [{ value: '', disabled: true }, this.validarNombrePais]
 
     });
   }
@@ -58,7 +58,17 @@ export class FormRepartidorComponent implements OnInit {
     }
   }
 
-  asignarPais(){
+  validarNombrePais(control: AbstractControl): null | object {
+    const nombre = <string>control.value;
+
+    if (nombre != null) {
+      return {
+        valido: true
+      }
+    }
+    else {
+      return null;
+    }
   }
 
   aceptar(){

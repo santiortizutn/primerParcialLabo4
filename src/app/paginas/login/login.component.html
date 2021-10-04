@@ -10,8 +10,14 @@
       <label for="correo"> Contraseña</label>
        <input type="password" class="form-control" [(ngModel)]="this.usuario.clave">
     </div>
+    <div class="group">
+      <label for="select"> Ingreso rapido</label>
+      <br>
+       <button class="btn btn-outline-dark" style="margin-right: 5px;" (click)="ingresoRapido('admin')">Admin</button>
+       <button class="btn btn-outline-dark" (click)="ingresoRapido('empleado')">Empleado</button>
+    </div>
     <br>
-    <button class="btn" (click)="login()">INGRESAR</button>
+    <button class="btn bton" (click)="login()">INGRESAR</button>
   </div>
 
 </div>

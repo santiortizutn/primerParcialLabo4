@@ -1,0 +1,203 @@
+{
+  "inscripciones" : {
+    "-McRFf4Ayk1lHkRj_Glf" : {
+      "alumnos" : [ {
+        "clave" : "123456",
+        "correo" : "alumna@alum.com",
+        "estado" : "activo",
+        "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Falumna%40alum.com%20-%20joven%20paciente.jpg?alt=media&token=bff0f1ca-a150-4c59-932a-edd7034296f7",
+        "tipo" : "alumno"
+      }, {
+        "clave" : "123456",
+        "correo" : "leo@diaz.com",
+        "estado" : "activo",
+        "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Fleo%40diaz.com%20-%20alumno.jpg?alt=media&token=3aa85557-c2f0-45a5-96bb-a25e461563b4",
+        "tipo" : "alumno"
+      } ],
+      "cupo" : 25,
+      "cupoDisponible" : 22,
+      "materia" : {
+        "alumnos" : "'",
+        "anio" : "primer",
+        "cuatrimestre" : "primer",
+        "cupo" : 25,
+        "estado" : "activo",
+        "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Fmatematica%20-%20matematicas.jpg?alt=media&token=0fb0f04a-9145-4925-97d2-54edc60f7eaa",
+        "nombre" : "matematica",
+        "profesor" : {
+          "clave" : "123456",
+          "correo" : "pepe@pepe.com",
+          "estado" : "activo",
+          "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Fpepe%40pepe.com%20-%20profesor.jpg?alt=media&token=aaf867f1-9ad5-49cd-a6ec-d559702d7502",
+          "tipo" : "profesor"
+        },
+        "uid" : "-McQISbnR4w1e_LOJfCx"
+      },
+      "nombre" : "matematica",
+      "uid" : "-McRFf4Ayk1lHkRj_Glf"
+    },
+    "-McRHPRbvY9UwGKdh0Y1" : {
+      "alumnos" : [ {
+        "clave" : "123456",
+        "correo" : "alumna@alum.com",
+        "estado" : "activo",
+        "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Falumna%40alum.com%20-%20joven%20paciente.jpg?alt=media&token=bff0f1ca-a150-4c59-932a-edd7034296f7",
+        "tipo" : "alumno"
+      } ],
+      "cupo" : 15,
+      "cupoDisponible" : 14,
+      "materia" : {
+        "anio" : "segundo",
+        "cuatrimestre" : "segundo",
+        "cupo" : 15,
+        "estado" : "activo",
+        "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Ffilosofia%20-%20filosofia-1.jpg?alt=media&token=81e98f2c-471e-4b8c-aadd-847adc9da066",
+        "nombre" : "filosofia",
+        "profesor" : {
+          "clave" : "123456",
+          "correo" : "sfdjs@siuvs.com",
+          "estado" : "activo",
+          "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Fsfdjs%40siuvs.com%20-%205f1f182214f3a_1004x565.jpg?alt=media&token=986211f1-13fd-4984-8594-5774fd554562",
+          "tipo" : "profesor"
+        },
+        "uid" : "-McQWhnuQhcyYNROkfcA"
+      },
+      "nombre" : "filosofia"
+    }
+  },
+  "materias" : {
+    "-McQISbnR4w1e_LOJfCx" : {
+      "alumnos" : "'",
+      "anio" : "primer",
+      "cuatrimestre" : "primer",
+      "cupo" : 25,
+      "estado" : "activo",
+      "foto" : "matematica - matematicas.jpg",
+      "nombre" : "matematica",
+      "profesor" : {
+        "clave" : "123456",
+        "correo" : "pepe@pepe.com",
+        "estado" : "activo",
+        "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Fpepe%40pepe.com%20-%20profesor.jpg?alt=media&token=aaf867f1-9ad5-49cd-a6ec-d559702d7502",
+        "tipo" : "profesor"
+      }
+    },
+    "-McQQh5JFcQBccgon955" : {
+      "anio" : "primer",
+      "cuatrimestre" : "primer",
+      "cupo" : 20,
+      "estado" : "activo",
+      "foto" : "fisica - biofisica-y-su-relacion-con-la-fisica-biologia-1-638.jpg",
+      "nombre" : "fisica",
+      "profesor" : {
+        "clave" : "123456",
+        "correo" : "prueba@pp.com",
+        "estado" : "activo",
+        "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Fprueba%40pp.com%20-%20fondoBlack.jpg?alt=media&token=eb3ece69-f1e9-48ba-a581-4f73459260d7",
+        "tipo" : "profesor"
+      }
+    },
+    "-McQWhnuQhcyYNROkfcA" : {
+      "anio" : "segundo",
+      "cuatrimestre" : "segundo",
+      "cupo" : 15,
+      "estado" : "activo",
+      "foto" : "filosofia - filosofia-1.jpg",
+      "nombre" : "filosofia",
+      "profesor" : {
+        "clave" : "123456",
+        "correo" : "sfdjs@siuvs.com",
+        "estado" : "activo",
+        "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Fsfdjs%40siuvs.com%20-%205f1f182214f3a_1004x565.jpg?alt=media&token=986211f1-13fd-4984-8594-5774fd554562",
+        "tipo" : "profesor"
+      }
+    }
+  },
+  "usuarios" : {
+    "-McMacsgQI4fNWRE-DpO" : {
+      "clave" : "123456",
+      "correo" : "santyno09@gmail.com",
+      "estado" : "activo",
+      "foto" : "santyno09@gmail.com - admin.jpg",
+      "tipo" : "administrador"
+    },
+    "-McMapwWUx60kGC9Ya5L" : {
+      "clave" : "123456",
+      "correo" : "pepe@pepe.com",
+      "estado" : "activo",
+      "foto" : "pepe@pepe.com - profesor.jpg",
+      "tipo" : "profesor"
+    },
+    "-McMauTXK859puqNObmA" : {
+      "clave" : "123456",
+      "correo" : "leo@diaz.com",
+      "estado" : "activo",
+      "foto" : "leo@diaz.com - alumno.jpg",
+      "tipo" : "alumno"
+    },
+    "-McPDzMrgf_hcXty2YgC" : {
+      "clave" : "123456",
+      "correo" : "prueba@pp.com",
+      "estado" : "activo",
+      "foto" : "prueba@pp.com - fondoBlack.jpg",
+      "tipo" : "profesor"
+    },
+    "-McQ0d1BnD0knbIVsmKE" : {
+      "clave" : "123456",
+      "correo" : "sfdjs@siuvs.com",
+      "estado" : "activo",
+      "foto" : "sfdjs@siuvs.com - 5f1f182214f3a_1004x565.jpg",
+      "tipo" : "profesor"
+    },
+    "-McQ0j3xeMbuBkzahrzH" : {
+      "clave" : "123456",
+      "correo" : "doc@lll.com",
+      "estado" : "activo",
+      "foto" : "doc@lll.com - medico.jpg",
+      "tipo" : "profesor"
+    },
+    "-McQ4zrxXKY9K6OvO3IB" : {
+      "clave" : "123456",
+      "correo" : "jorge@jorge.com",
+      "estado" : "activo",
+      "foto" : "jorge@jorge.com - fondo-hospital.jpg",
+      "tipo" : "profesor"
+    },
+    "-McQISbnR4w1e_LOJfCx" : {
+      "alumnos" : [ {
+        "clave" : "123456",
+        "correo" : "leo@diaz.com",
+        "estado" : "activo",
+        "foto" : "https://firebasestorage.googleapis.com/v0/b/segundoparciallabo4.appspot.com/o/fotos%2Fleo%40diaz.com%20-%20alumno.jpg?alt=media&token=3aa85557-c2f0-45a5-96bb-a25e461563b4",
+        "tipo" : "alumno"
+      } ]
+    },
+    "-McQJgP0IyapWo4_ejFX" : {
+      "clave" : "123456",
+      "correo" : "alumna@alum.com",
+      "estado" : "activo",
+      "foto" : "alumna@alum.com - joven paciente.jpg",
+      "tipo" : "alumno"
+    },
+    "-McQJkg6Upl8lvMpcd26" : {
+      "clave" : "123456",
+      "correo" : "pibe@pibe.com",
+      "estado" : "activo",
+      "foto" : "pibe@pibe.com - medico-juan.jpg",
+      "tipo" : "alumno"
+    }
+  },
+
+  "users":{
+    "1" : {
+      "clave" : "123456",
+      "correo" : "admin@gmail.com",
+      "perfil" : "admin"
+    },
+    "2" : {
+      "clave" : "123456",
+      "correo" : "empleado@gmail.com",
+      "perfil" : "empleado"
+    }
+  }
+}
