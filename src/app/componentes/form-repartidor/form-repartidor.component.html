@@ -43,10 +43,10 @@
     </div>
     <div class="col-md-6 mb-3">
       <label for="pais">Pais de origen</label>
-      <input type="text" class="form-control" id="pais" placeholder="" formControlName="pais" [(ngModel)]="this.paisSeleccionado.name">
+      <input type="text" class="form-control" id="pais" placeholder="" disabled formControlName="pais" value="{{this.paisSeleccionado?.name.common}}">
     </div>
 
   </div>
   <hr class="mb-4">
-  <button class="w-100 btn btn-primary btn-lg btn-block" type="submit" [disabled] ="formGroup.invalid">Aceptar</button>
+  <button class="w-100 btn btn-primary btn-lg btn-block" type="submit" [disabled]="formGroup.invalid">Aceptar</button>
 </form>

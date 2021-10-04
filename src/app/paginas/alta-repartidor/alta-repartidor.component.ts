@@ -17,14 +17,21 @@ export class AltaRepartidorComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.paisesService.traerTodos().subscribe(paises => {
-      for (let i = 0; i < 10; i++) {
-        this.paises.push(paises[i]);
-      }
+    this.paisesService.traerTodos().subscribe((paises) => {
+      this.paises = JSON.parse(JSON.stringify(paises));;
+      console.log(this.paises);
     });
+
+
+
+  }
+  asignarPais(object : any){
+    this.paisSeleccionado = object;
   }
 
-
+  devolverPais(){
+    return this.paisSeleccionado;
+  }
 
 
 }

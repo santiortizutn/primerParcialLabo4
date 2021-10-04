@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { PaisesService } from 'src/app/servicios/paises.service';
 
 @Component({
   selector: 'app-tabla-paises',
@@ -10,7 +11,10 @@ export class TablaPaisesComponent implements OnInit {
   @Input('paises') listadoPaises : Array<any>;
   @Output() enviarPais = new EventEmitter<any>();
 
-  constructor() { }
+  paises = [];
+
+  constructor(private paisesService : PaisesService) {
+  }
 
   ngOnInit(): void {
   }

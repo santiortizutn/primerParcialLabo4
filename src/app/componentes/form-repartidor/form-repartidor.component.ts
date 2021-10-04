@@ -19,7 +19,7 @@ export class FormRepartidorComponent implements OnInit {
       "edad": ['', [Validators.required, Validators.min(18), Validators.max(99)]],
       "capacidad": ['', [Validators.required, Validators.min(1), Validators.max(99)]],
       "unidadPropia": ['', Validators.required],
-      "pais": [this.paisSeleccionado, Validators.required]
+      "pais": [this.paisSeleccionado]
 
     });
   }
@@ -58,10 +58,15 @@ export class FormRepartidorComponent implements OnInit {
     }
   }
 
+  asignarPais(){
+  }
 
   aceptar(){
+    this.formGroup.controls['pais'].setValue(this.paisSeleccionado);
+
     alert("Por consola se muestra el formulario");
     console.info(this.formGroup.getRawValue());
+    this.formGroup.reset({'nombre': '', 'dni':'', 'edad': '', 'capacidad':'', 'unidadPropia': '', 'pais':''});
   }
 
 }

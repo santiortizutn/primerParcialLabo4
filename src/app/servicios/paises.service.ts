@@ -11,7 +11,7 @@ export class PaisesService {
   }
 
   traerTodos(){
-    return this.http.get('https://restcountries.eu/rest/v2/regionalbloc/eu');
+    return this.http.get('https://restcountries.com/v3.1/region/europe');
   }
 
 
