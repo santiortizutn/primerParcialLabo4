@@ -10,6 +10,14 @@ import { LoginComponent } from './paginas/login/login.component';
 import { AltaRepartidorComponent } from './paginas/alta-repartidor/alta-repartidor.component';
 import { TablaPaisesComponent } from './componentes/tabla-paises/tabla-paises.component';
 import { FormRepartidorComponent } from './componentes/form-repartidor/form-repartidor.component';
+import { environment } from 'src/environments/environment';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireModule } from '@angular/fire';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +34,13 @@ import { FormRepartidorComponent } from './componentes/form-repartidor/form-repa
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireDatabaseModule,
+    AngularFireStorageModule,
+    AngularFirestoreModule,
+    AngularFireAnalyticsModule,
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

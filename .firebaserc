@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "segundoparciallabo4": {
+      "hosting": {
+        "primerparcialLabo4": [
+          "segundoparciallabo4"
+        ]
+      }
+    }
+  }
+}
