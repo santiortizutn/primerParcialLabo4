@@ -17,6 +17,9 @@
           <a class="nav-link" [routerLink]="['/alta']">Alta repartidor</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/detalle']">Repartidor detalle</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" *ngIf="this.authService.logueado" [routerLink]="['/']" (click)="logOut()">Logout</a>
         </li>
       </ul>

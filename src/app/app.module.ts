@@ -17,6 +17,10 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireModule } from '@angular/fire';
+import { RepartidorDetalleComponent } from './paginas/repartidor-detalle/repartidor-detalle.component';
+import { RepartidorListadoComponent } from './componentes/repartidor-listado/repartidor-listado.component';
+import { DetalleRepartidorComponent } from './componentes/detalle-repartidor/detalle-repartidor.component';
+import { DetallePaisComponent } from './componentes/detalle-pais/detalle-pais.component';
 
 
 @NgModule({
@@ -27,7 +31,11 @@ import { AngularFireModule } from '@angular/fire';
     LoginComponent,
     AltaRepartidorComponent,
     TablaPaisesComponent,
-    FormRepartidorComponent
+    FormRepartidorComponent,
+    RepartidorDetalleComponent,
+    RepartidorListadoComponent,
+    DetalleRepartidorComponent,
+    DetallePaisComponent
   ],
   imports: [
     BrowserModule,

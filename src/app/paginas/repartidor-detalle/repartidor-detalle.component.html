@@ -1,0 +1,26 @@
+<div class="container py-4">
+  <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid">
+      <h3>Listado de repartidores</h3>
+      <app-repartidor-listado (enviarDetalle)="repartidorElegido = $event"></app-repartidor-listado>
+    </div>
+  </div>
+
+  <div class="row align-items-md-stretch">
+    <div class="col-md-6">
+      <div class="h-100 p-5 text-white bg-dark rounded-3">
+        <h3>Detalle repartidor</h3>
+        <app-detalle-repartidor [repartidorElegido]="repartidorElegido"></app-detalle-repartidor>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="h-100 p-5 bg-light border rounded-3">
+        <h3>Detalle pais</h3>
+        <app-detalle-pais [paisElegido]="repartidorElegido"></app-detalle-pais>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

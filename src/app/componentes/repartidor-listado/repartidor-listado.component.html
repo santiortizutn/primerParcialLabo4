@@ -1,0 +1,9 @@
+
+<div>
+  <ul>
+    <li *ngFor="let repartidor of listadoRepartidores" style="width: 300px; justify-content: space-between; padding: 15px;">
+      <span style="margin-right: 50px;">{{repartidor.nombre}}</span>
+      <button class="btn btn-dark" (click)="mandarEvento(repartidor)">Ver detalle</button>
+    </li>
+  </ul>
+</div>

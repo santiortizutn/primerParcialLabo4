@@ -1,0 +1,11 @@
+div{
+  overflow-y: auto;
+  height: 200px;
+  width: 400px;
+
+}
+
+img{
+  width: 70px;
+  height: 25px;
+}

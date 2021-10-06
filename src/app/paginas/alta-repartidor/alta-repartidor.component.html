@@ -2,10 +2,13 @@
   <div class="row">
     <div class="col-md-4 order-md-2 mb-4">
       <app-tabla-paises [paises]="this.paises" (enviarPais)="this.paisSeleccionado = $event"></app-tabla-paises>
+      <br>
+      <button class="btn btn-dark" style="margin-right: 5px;" (click)="traerEuropa()">Europa</button>
+      <button class="btn btn-dark" (click)="traerAfrica()">Africa</button>
     </div>
     <div class="col-md-8 order-md-1">
       <h4 class="mb-3">Formulario de repartidores</h4>
-      <app-form-repartidor [pais]="this.paisSeleccionado"></app-form-repartidor>
+      <app-form-repartidor [pais]="this.paisSeleccionado" (enviarRepartidor)="guardarRepartidor($event)"></app-form-repartidor>
     </div>
   </div>
 

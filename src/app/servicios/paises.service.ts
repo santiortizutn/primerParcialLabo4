@@ -10,8 +10,12 @@ export class PaisesService {
   constructor(private http : HttpClient) {
   }
 
-  traerTodos(){
+  traerEuropa(){
     return this.http.get('https://restcountries.com/v3.1/region/europe');
+  }
+
+  traerAfrica(){
+    return this.http.get('https://restcountries.com/v3.1/region/africa');
   }
 
 
