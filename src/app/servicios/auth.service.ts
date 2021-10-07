@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
+import { Usuario } from '../clases/usuario';
 
 
 @Injectable({
@@ -13,7 +14,7 @@ export class AuthService {
   constructor(private router : Router, private firebaseAuth: AngularFireAuth) { }
 
   signIn(user : any){
-    localStorage.setItem('usuario', user);
+    localStorage.setItem('usuario', user.perfil);
     this.logueado = true;
   }
 

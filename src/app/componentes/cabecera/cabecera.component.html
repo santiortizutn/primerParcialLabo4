@@ -20,6 +20,9 @@
           <a class="nav-link" [routerLink]="['/detalle']">Repartidor detalle</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/pizzas']">Salen pizzas</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" *ngIf="this.authService.logueado" [routerLink]="['/']" (click)="logOut()">Logout</a>
         </li>
       </ul>

@@ -1,0 +1,18 @@
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th style="width: 22%;">Nombre</th>
+      <th style="width: 42%;">Ingredientes</th>
+      <th style="width: 18%;">Peso</th>
+      <th style="width: 18%;">Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let pizza of this.listadoPizzas">
+        <th scope="row">{{pizza.nombre}}</th>
+        <td>{{pizza.ingredientes}}</td>
+        <td>{{pizza.peso}}g</td>
+        <td>${{pizza.precio}}</td>
+      </tr>
+  </tbody>
+</table>

@@ -1,0 +1,22 @@
+<form [formGroup]="formGroup" (ngSubmit)="aceptar()">
+  <ul class="list-unstyled mt-3 mb-4">
+    <li>
+      <input class="form-control form-control-sm" placeholder="Nombre" formControlName="nombre">
+      <small class="invalid" *ngIf="formGroup.get('nombre')?.errors?.required && formGroup.get('nombre')?.touched">El nombre es requerido</small>
+    </li>
+    <li>
+      <input type="number" class="form-control form-control-sm" placeholder="Precio en $" formControlName="precio">
+      <small class="invalid" *ngIf="formGroup.get('precio')?.errors?.required && formGroup.get('precio')?.touched">El precio es requerido</small>
+    </li>
+    <li>
+      <input type="text" class="form-control form-control-sm" placeholder="Ingredientes" formControlName="ingredientes">
+      <small class="invalid" *ngIf="formGroup.get('ingredientes')?.errors?.required && formGroup.get('ingredientes')?.touched">Los ingredientes son requeridos</small>
+    </li>
+    <li>
+      <input type="number" class="form-control form-control-sm" placeholder="Peso aproximado en gr" formControlName="peso">
+      <small class="invalid" *ngIf="formGroup.get('peso')?.errors?.min || formGroup.get('peso')?.errors?.max && formGroup.get('peso')?.touched">La peso debe ser entre 500 y 1000 gramos</small>
+      <small class="invalid" *ngIf="formGroup.get('peso')?.errors?.required && formGroup.get('peso')?.touched">El peso es requerido</small>
+    </li>
+  </ul>
+  <button class="w-100 btn btn-lg btn-outline-primary" type="submit" [disabled]="formGroup.invalid">Confirmar</button>
+</form>

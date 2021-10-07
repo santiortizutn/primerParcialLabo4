@@ -18,7 +18,7 @@ export class RepartidorListadoComponent implements OnInit {
   constructor(private db : DatabaseService) { }
 
   ngOnInit(): void {
-    this.db.obtenerListado().snapshotChanges().forEach(element => {
+    this.db.obtenerListado().snapshotChanges().forEach((element: any[]) => {
       this.listadoRepartidores = [];
       element.forEach(snapshot => {
         const repartidor = snapshot.payload.toJSON() as Repartidor;

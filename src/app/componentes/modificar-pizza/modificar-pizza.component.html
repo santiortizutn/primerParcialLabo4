@@ -1,0 +1,15 @@
+<ul class="list-unstyled mt-3 mb-4">
+  <li>
+    <input class="form-control form-control-sm" disabled placeholder="Nombre" [(ngModel)]="nuevaPizza.nombre">
+  </li>
+  <li>
+    <input type="number" class="form-control form-control-sm" [disabled]="nuevaPizza.precio == 0" placeholder="Precio en $" [(ngModel)]="nuevaPizza.precio">
+  </li>
+  <li>
+    <input type="text" class="form-control form-control-sm" [disabled]="nuevaPizza.ingredientes == ''" placeholder="Ingredientes" [(ngModel)]="nuevaPizza.ingredientes">
+  </li>
+  <li>
+    <input type="number" class="form-control form-control-sm" [disabled]="nuevaPizza.peso == 0" placeholder="Peso en gramos" [(ngModel)]="nuevaPizza.peso">
+  </li>
+</ul>
+<button class="w-100 btn btn-lg btn-outline-primary" type="button" [disabled]="nuevaPizza.peso == 0" (click)="aceptar()">Confirmar</button>

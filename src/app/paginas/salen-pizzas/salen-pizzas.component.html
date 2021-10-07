@@ -1,0 +1,43 @@
+<div class="container py-3">
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Salen Pizzas</h1>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Crear pizza</h4>
+          </div>
+          <div class="card-body">
+            <app-crear-pizza (enviarPizza)="nuevaPizza = $event"></app-crear-pizza>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Modificar pizza</h4>
+          </div>
+          <div class="card-body">
+            <app-modificar-pizza [pizza]="nuevaPizza" (enviarPizza)="nuevaPizza = $event"></app-modificar-pizza>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Borrar pizza</h4>
+          </div>
+          <div class="card-body">
+            <app-borrar-pizza [pizza]="nuevaPizza" (pizzaBorrada)="nuevaPizza = $event"></app-borrar-pizza>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="display-6 text-center mb-4">Listado de pizzas</h3>
+    <div class="table-responsive">
+      <app-pizza-listado></app-pizza-listado>
+    </div>
+</div>
